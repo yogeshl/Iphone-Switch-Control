@@ -1,0 +1,70 @@
+/*------- Check Boxes ------*/
+/*Custom CheckBoxes and Radio Buttons*/
+.cm-checkbox-wrap{
+    width: 60px;
+    height: 27px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+input[type="radio"], input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    margin: 0 !important;
+}
+input[type="checkbox"] + label {
+    line-height: 17px;
+    width: 60px;
+    border-radius: 200px;
+    text-align: left;
+    font-size: 12px;
+    padding: 2px;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 0;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3) inset;
+    color: #FFF;
+    background: linear-gradient(#666, #ccc);
+    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    font-weight: bold;
+}
+input[type="checkbox"] + label:after{
+    content: 'OFF';
+    text-align: center;
+    padding: 0 5px;
+    float: right;
+}
+input[type="checkbox"] + label:before{
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: #FFF;
+    float: left;
+    border-radius: 200px;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.7), 0px 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+input[type="checkbox"]:checked + label {
+    background: linear-gradient(#025398, #0280eb);
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1) inset;
+    color: #FFF;
+}
+input[type="checkbox"]:checked + label:after{
+    content: 'ON';
+    text-align: center;
+    padding: 0 5px;
+    float: left;
+}
+input[type="checkbox"]:checked + label:before{
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: #FFF;
+    float: right;
+    border-radius: 200px;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.7), 0px 0 2px rgba(0, 0, 0, 0.5) inset;
+}
